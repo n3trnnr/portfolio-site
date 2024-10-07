@@ -1,0 +1,24 @@
+import React from 'react';
+import styles from './Header.module.scss'
+
+
+const Header = () => {
+    return (
+        <header className={styles.header}>
+            <div className={styles["header__inner"]}>
+                <a href="#!" className={styles["header__logo"]}>
+                    SRDK
+                </a>
+                <nav className={styles["header__menu"]}>
+                    <ul className={styles["header__menu-list"]}>
+                        <li className={styles["header__menu-item"]}>About Me</li>
+                        <li className={styles["header__menu-item"]}>Works</li>
+                        <li className={styles["header__menu-item"]}>Contact</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    );
+}
+
+export default Header;

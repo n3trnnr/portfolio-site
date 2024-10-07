@@ -1,0 +1,28 @@
+.section {
+    background: var(--color-light-gray);
+
+    &__inner {
+        max-width: 1230px;
+        margin: 0 auto;
+        padding-inline: 30px;
+        min-height: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__text-content {
+        padding-bottom: 150px;
+    }
+
+    &__headling {
+        font-size: 44px;
+        font-weight: 600;
+    }
+
+    &__image {
+        max-height: 500px;
+        width: auto;
+    }
+}

@@ -1,0 +1,19 @@
+.section {
+    background: var(--color-white);
+
+    &__inner {
+        max-width: 1230px;
+        max-height: 408px;
+        margin: 0 auto;
+        padding: 0 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: var(--font-xl);
+        font-weight: var(--font-semibold);
+    }
+}
