@@ -1,8 +1,8 @@
 import Header from "../Header/Header";
 import AboutMe from "../AboutMe/AboutMe";
-import ProjectsList from "../WorksList/WorksList";
-import Footer from "../Footer/Footer";
 import Skills from "../Skills/Skills";
+import WorksList from "../WorksList/WorksList";
+import Footer from "../Footer/Footer";
 
 const Layout = () => {
     return (
@@ -10,7 +10,7 @@ const Layout = () => {
             <Header />
             <AboutMe />
             <Skills />
-            <ProjectsList />
+            <WorksList />
             <Footer />
         </>
     );

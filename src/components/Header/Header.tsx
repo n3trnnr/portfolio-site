@@ -12,7 +12,7 @@ const Header = () => {
                 <nav className={styles["header__menu"]}>
                     <ul className={styles["header__menu-list"]}>
                         <li className={styles["header__menu-item"]}>About Me</li>
-                        <li className={styles["header__menu-item"]}>Works</li>
+                        <li className={styles["header__menu-item"]}><a href='#works'>Works</a></li>
                         <li className={styles["header__menu-item"]}>Contact</li>
                     </ul>
                 </nav>

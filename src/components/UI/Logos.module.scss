@@ -1,10 +1,19 @@
 .logos {
-    max-width: 960px;
-    padding: 0 30px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+    }
+
+    &__logo {
+        cursor: pointer;
+
+        &:hover {
+            transition: all 1000ms;
+            transform: rotateY(360deg);
+        }
+    }
+
 }

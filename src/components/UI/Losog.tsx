@@ -39,14 +39,16 @@ const svgArr = [
 
 const Logos = () => {
     return (
-        <div className={styles['logos']}>
-            {svgArr.map((i, index) => {
-                const Logo = i as React.FunctionComponent<React.SVGProps<SVGSVGElement>>
-                return (
-                    <Logo key={index} />
-                )
-            })}
-        </div>
+        <section className={styles['logos']}>
+            <div className={styles['logos__inner']}>
+                {svgArr.map((i, index) => {
+                    const Logo = i as React.FunctionComponent<React.SVGProps<SVGSVGElement>>
+                    return (
+                        <Logo className={styles['logos__logo']} key={index} />
+                    )
+                })}
+            </div>
+        </section>
     )
 }
 
