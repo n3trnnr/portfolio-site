@@ -17,8 +17,8 @@ const Header = () => {
                         <li >
                             <a className={styles["header__menu-item"]} href='#works'>Works</a>
                         </li>
-                        <li className={styles["header__menu-item"]}>
-                            <a href='#contact'>Contact</a>
+                        <li>
+                            <a className={styles["header__menu-item"]} href='#contact'>Contact</a>
                         </li>
                     </ul>
                 </nav>

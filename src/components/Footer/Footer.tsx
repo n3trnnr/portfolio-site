@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './Footer.module.scss'
-import tg from '../../assets/icons/telegram.svg'
+import Logos from "../UI/Losog";
 
 const Footer = () => {
     return (
@@ -18,8 +18,12 @@ const Footer = () => {
                         Send message
                     </a>
                 </button> */}
-                <a href="https://t.me/n3trnnr" target="_blacnk" className={styles['footer__telegram-btn']}>
-                    <img src={tg} alt="" />
+                <a
+                    className={styles['footer__telegram-btn']}
+                    href="https://t.me/n3trnnr"
+                    target="_blank"
+                >
+                    <Logos logoName={'tg'} styleName={styles['footer__logo']} />
                 </a>
                 <span>2024</span>
             </div>

@@ -18,7 +18,10 @@ import Vite from '../../assets/logos/vite.svg?react'
 import Webpack from '../../assets/logos/webpack.svg?react'
 import Axios from '../../assets/logos/axios.svg?react'
 
-const svgArr = [
+import Telegram from '../../assets/icons/telegram.svg?react'
+import { ILogos } from "./Logos.props";
+
+const svgSkills = [
     ReactLogo,
     Redux,
     TypeScript,
@@ -37,18 +40,31 @@ const svgArr = [
     Figma
 ]
 
-const Logos = () => {
+export const svgIcons = {
+    tg: Telegram
+}
+
+//Перенести html структуру в skills, возвращать только компонент <Logo/>
+
+const Logos = ({ logoName, styleName }: ILogos) => {
+
+    const Logo: React.FunctionComponent<React.SVGProps<SVGSVGElement>> = svgIcons[logoName!];
+
     return (
-        <section className={styles['logos']}>
-            <div className={styles['logos__inner']}>
-                {svgArr.map((i, index) => {
-                    const Logo = i as React.FunctionComponent<React.SVGProps<SVGSVGElement>>
-                    return (
-                        <Logo className={styles['logos__logo']} key={index} />
-                    )
-                })}
-            </div>
-        </section>
+        <>
+            {logoName ? <Logo className={styleName} /> :
+                <section className={styles['logos']}>
+                    <div className={styles['logos__inner']}>
+                        {svgSkills.map((i, index) => {
+                            const Logo = i as React.FunctionComponent<React.SVGProps<SVGSVGElement>>
+                            return (
+                                <Logo className={styles['logos__logo']} key={index} />
+                            )
+                        })}
+                    </div>
+                </section>
+            }
+        </>
     )
 }
 

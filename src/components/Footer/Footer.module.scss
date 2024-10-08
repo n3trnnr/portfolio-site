@@ -38,8 +38,12 @@
         margin-bottom: 34px;
     }
 
-    &:last-child {
-        color: var(--color-gray);
-    }
+    &__logo {
+        width: 42px;
+        height: auto;
 
+        &:hover {
+            fill: var(--color-gray)
+        }
+    }
 }
