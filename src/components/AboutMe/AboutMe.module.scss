@@ -8,12 +8,12 @@
         min-height: 500px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        column-gap: 30px;
 
     }
 
     &__text-content {
-        padding-bottom: 150px;
+        margin-top: 119px;
     }
 
     &__headling {

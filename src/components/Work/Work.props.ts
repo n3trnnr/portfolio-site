@@ -1,4 +1,6 @@
 export interface Iwork {
+    id: number,
     title: string,
-    img: string
+    img: string,
+    url: string
 }

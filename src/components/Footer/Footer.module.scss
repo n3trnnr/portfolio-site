@@ -1,0 +1,45 @@
+.footer {
+
+    &__inner {
+        max-width: 296px;
+        max-height: 412px;
+        margin: 90px auto 30px auto;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: var(--color-black);
+        font-size: var(--font-xl);
+        font-weight: var(--font-semibold);
+    }
+
+    &__description {
+        margin-block: 40px;
+        text-align: center;
+        color: var(--color-dark-gray);
+    }
+
+    &__mail-btn {
+        // max-width: 180.5px;
+        padding: 0 15px;
+        height: 42px;
+        margin-bottom: 85px;
+        border-radius: var(--radius-md);
+        background: var(--color-black);
+        color: var(--color-white);
+        font-size: var(--font-md);
+        // font-weight: var(--font-regular);
+    }
+
+    &__telegram-btn {
+        margin-bottom: 34px;
+    }
+
+    &:last-child {
+        color: var(--color-gray);
+    }
+
+}

@@ -1,3 +1,5 @@
+@use '../../styles/variables';
+
 .work {
     display: flex;
     flex-direction: column;
@@ -6,7 +8,21 @@
 
     &__work-title {
         margin-bottom: 30px;
+        text-decoration: underline;
+
+        &:hover {
+            color: var(--color-gray);
+        }
     }
 
-    &__work-image {}
+    &__work-image {
+        width: 930px;
+        height: auto;
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow);
+    }
+}
+
+.work+.work {
+    margin-top: 90px;
 }

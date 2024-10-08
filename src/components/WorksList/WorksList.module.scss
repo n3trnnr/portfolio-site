@@ -1,12 +1,11 @@
 .works {
     background: var(--color-light-gray);
-    padding-inline: 30px;
 
     &__works-inner {
+        padding: 0 30px 30px 30px;
         max-width: 990px;
         margin: 0 auto;
         border-radius: var(--raduis-md);
-        box-shadow: var(--shadow);
     }
 
     &__works-list {
@@ -17,7 +16,7 @@
     }
 
     &__works-title {
-        padding-block: 45px;
+        padding-block: 30px;
         font-size: var(--font-xl);
         font-weight: var(--font-semibold);
     }

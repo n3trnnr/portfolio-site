@@ -5,6 +5,22 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -17,4 +33,13 @@ li {
 a {
   text-decoration: none;
   color: black;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
 }

@@ -8,7 +8,7 @@ const AboutMe = () => {
             <div className={styles['section__inner']}>
                 <div className={styles['section__text-content']}>
                     <h1 className={styles['section__headling']}>Alexey Serdyuk <br /> Frontend Developer</h1>
-                    <div className={styles['section__description']}>I'm a frontend react programmer</div>
+                    <p className={styles['section__description']}>I'm a frontend react programmer</p>
                 </div>
                 <img className={styles['section__image']} src={photo} alt="" />
             </div>
