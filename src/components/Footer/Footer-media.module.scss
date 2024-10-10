@@ -1,0 +1,10 @@
+@import '../../styles/mixins';
+
+@include laptop() {
+    .footer {
+
+        &__inner {
+            margin: 60px auto 30px auto;
+        }
+    }
+}

@@ -9,7 +9,7 @@
 ;
 
 @mixin mobile-big () {
-    @media (max-width: 960px) {
+    @media (max-width: 799px) {
         @content
     }
 }

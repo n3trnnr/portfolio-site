@@ -13,6 +13,7 @@
     }
 
     &__text-content {
+        max-width: 500px;
         margin-top: 119px;
     }
 
@@ -23,7 +24,7 @@
     }
 
     &__description {
-        width: 500px;
+        width: inherit;
     }
 
     &__image {

@@ -32,14 +32,27 @@
     }
 }
 
-@include mobile-small() {
+@include mobile-big() {
     .section {
         &__text-content {
-            max-width: 320px;
+            max-width: 450px;
         }
 
         &__description {
-            max-width: inherit;
+            // max-width: inherit;
+            font-size: 14px;
+        }
+    }
+}
+
+@include mobile-small() {
+    .section {
+        &__text-content {
+            width: 315px;
+        }
+
+        &__description {
+            // max-width: inherit;
             font-size: 14px;
         }
     }

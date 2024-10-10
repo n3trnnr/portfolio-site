@@ -13,7 +13,14 @@ const WorksList = () => {
                         Portfolio
                     </div>
                     {worksList.map((work) => (
-                        <Work key={work.id} id={work.id} title={work.title} img={work.img} url={work.url} />
+                        <Work
+                            key={work.id}
+                            id={work.id}
+                            title={work.title}
+                            description={work.description}
+                            imgDesktop={work.imgDesktop}
+                            imgMobile={work.imgMobile} url={work.url}
+                        />
                     ))
                     }
                 </div>
