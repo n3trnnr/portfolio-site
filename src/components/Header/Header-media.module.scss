@@ -1,7 +1,15 @@
 @use '../../styles/variables';
 @import '../../styles/mixins';
 
-@include desktop {
+@include laptop() {
+    .header {
+        &__menu-list {
+            column-gap: 80px;
+        }
+    }
+}
+
+@include mobile-big {
     .header {
         &__menu {
             display: none;

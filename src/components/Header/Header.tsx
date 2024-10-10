@@ -26,8 +26,8 @@ const Header = () => {
                 </a>
                 <nav className={`${styles["header__menu"]} ${active && styles['header__menu__active']}`}>
                     <ul className={styles["header__menu-list"]}>
-                        <li onClick={() => setActive(!active)} className={styles["header__menu-item"]}>
-                            About Me
+                        <li onClick={() => setActive(!active)}>
+                            <a className={styles["header__menu-item"]} href="#me">About Me</a>
                         </li>
                         <li onClick={() => setActive(!active)}>
                             <a className={styles["header__menu-item"]} href='#works'>Works</a>

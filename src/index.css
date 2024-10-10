@@ -43,3 +43,7 @@ button {
 button:hover {
   cursor: pointer;
 }
+
+img {
+  vertical-align: middle;
+}

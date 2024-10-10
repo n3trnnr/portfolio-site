@@ -44,8 +44,6 @@ export const svgIcons = {
     tg: Telegram
 }
 
-//Перенести html структуру в skills, возвращать только компонент <Logo/>
-
 const Logos = ({ logoName, styleName }: ILogos) => {
 
     const Logo: React.FunctionComponent<React.SVGProps<SVGSVGElement>> = svgIcons[logoName!];
@@ -53,16 +51,14 @@ const Logos = ({ logoName, styleName }: ILogos) => {
     return (
         <>
             {logoName ? <Logo className={styleName} /> :
-                <section className={styles['logos']}>
-                    <div className={styles['logos__inner']}>
-                        {svgSkills.map((i, index) => {
-                            const Logo = i as React.FunctionComponent<React.SVGProps<SVGSVGElement>>
-                            return (
-                                <Logo className={styles['logos__logo']} key={index} />
-                            )
-                        })}
-                    </div>
-                </section>
+                <>
+                    {svgSkills.map((i, index) => {
+                        const Logo = i as React.FunctionComponent<React.SVGProps<SVGSVGElement>>
+                        return (
+                            <Logo className={styles['logo']} key={index} />
+                        )
+                    })}
+                </>
             }
         </>
     )

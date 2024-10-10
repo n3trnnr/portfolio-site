@@ -1,0 +1,40 @@
+@import '../../styles/mixins';
+
+@include laptop() {
+    .section {
+        &__inner {
+            max-width: 600px;
+        }
+
+        &__logos-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 70px;
+        }
+    }
+}
+
+@include mobile-big() {
+    .section {
+        &__inner {
+            max-width: 524px;
+        }
+
+        &__logos-list {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+    }
+}
+
+@include mobile-small() {
+    .section {
+        &__logos-list {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 50px 100px;
+        }
+    }
+}

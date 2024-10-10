@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './Skills.module.scss'
+import styles from './index.module.scss'
 import Logos from "../UI/Losog";
 
 const Skills = () => {
