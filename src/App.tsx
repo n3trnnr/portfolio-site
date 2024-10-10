@@ -5,7 +5,7 @@ function App() {
 
 
   return (
-    <main>
+    <main className={styles.main}>
       <Layout />
     </main>
   )

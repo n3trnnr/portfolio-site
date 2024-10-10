@@ -13,11 +13,13 @@ const Footer = () => {
                     Want to know more or just chat?<br />
                     You are welcome!
                 </p>
-                {/* <button className={styles['footer__mail-btn']}>
-                    <a href="mailto:n3trnnr@gmail.com">
+
+                <button className={styles['footer__mail-btn']}>
+                    <a href="mailto:n3trnnr@gmail.com" target="_top">
                         Send message
                     </a>
-                </button> */}
+                </button>
+
                 <a
                     className={styles['footer__telegram-btn']}
                     href="https://t.me/n3trnnr"
@@ -25,7 +27,7 @@ const Footer = () => {
                 >
                     <Logos logoName={'tg'} styleName={styles['footer__logo']} />
                 </a>
-                <span>2024</span>
+                <span>© Alexey Serdyuk, 2024</span>
             </div>
         </footer>
     );

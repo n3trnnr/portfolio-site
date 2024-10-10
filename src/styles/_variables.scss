@@ -9,7 +9,7 @@
     --radius-md: 20px;
     --radius-round: 50%;
 
-    --transition-duration: 0.2ms;
+    --transition-bg: background 0.1s ease-in;
 
     --shadow: 0 4px 10px #0000002b;
 
@@ -23,5 +23,14 @@
     --font-medium: 500;
     --font-semibold: 600;
     --font-bold: 700;
-
 }
+
+%font-title {
+    font-size: var(--font-xl);
+    font-weight: var(--font-semibold);
+    color: var(--color-black);
+}
+
+$breakpoint-xl: 1230px;
+$breakpoint-md: 1230px;
+$breakpoint-sm: 375px;

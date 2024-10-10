@@ -1,6 +1,7 @@
 @use '../../styles/variables';
 
 .header {
+    // position: fixed;
     background: var(--color-light-gray);
 
     &__inner {
@@ -18,7 +19,9 @@
         font-weight: 700;
     }
 
-    &__menu {}
+    &__menu {
+        display: block;
+    }
 
     &__menu-list {
         display: flex;
@@ -32,5 +35,41 @@
         &:hover {
             color: var(--color-gray)
         }
+    }
+}
+
+
+.burger-menu {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border-radius: var(--radius-sm);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    row-gap: 5px;
+
+    &__item {
+        width: 25px;
+        height: 3px;
+        background: var(--color-black);
+        transition: transform 0.2s ease;
+    }
+
+    &:hover &__item {
+        background: var(--color-gray);
+    }
+
+    &__item__active:first-child {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    &__item__active:last-child {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    &__item__active:nth-child(2) {
+        opacity: 0;
     }
 }

@@ -1,3 +1,5 @@
+@use '../../styles/variables';
+
 .section {
     background: var(--color-white);
 
@@ -14,8 +16,7 @@
 
     &__title {
         padding-block: 30px;
-        font-size: var(--font-xl);
-        font-weight: var(--font-semibold);
+        @extend %font-title;
     }
 
     &__logos-list {
