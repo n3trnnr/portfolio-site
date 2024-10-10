@@ -1,7 +1,7 @@
 @import './variables';
 
 @mixin desktop () {
-    @media (max-width: 1230px) {
+    @media (max-width: 1020px) {
         @content
     }
 }

@@ -19,10 +19,15 @@
     &__headling {
         font-size: 44px;
         font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        width: 500px;
     }
 
     &__image {
-        max-height: 500px;
-        width: auto;
+        width: 500px;
+        height: auto;
     }
 }
