@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './index.module.scss'
 
 
@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <header className={styles['header']}>
             <div className={styles["header__inner"]}>
-                <a href="#!" className={styles["header__logo"]}>
+                <a href="#!" className={styles["header__logo"]} data-aos="fade-down">
                     SRDK
                 </a>
                 <nav className={`${styles["header__menu"]} ${active && styles['header__menu__active']}`}>

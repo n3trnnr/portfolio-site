@@ -1,8 +1,6 @@
 export interface Iwork {
-    id: number,
     title: string,
-    description: string,
-    imgDesktop: string,
-    imgMobile: string,
+    description?: string,
+    img: string,
     url: string
 }

@@ -19,18 +19,20 @@
     }
 
     &__menu {
+        width: 500px;
         display: block;
     }
 
     &__menu-list {
         display: flex;
-        column-gap: 180px;
-        cursor: pointer;
+        justify-content: space-between;
         font-size: var(--font-s);
         font-weight: var(--font-medium);
     }
 
     &__menu-item {
+        cursor: pointer;
+
         &:hover {
             color: var(--color-gray);
             transition: var(--transition-color);

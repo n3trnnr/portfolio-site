@@ -14,6 +14,7 @@
 
     &__text-content {
         max-width: 500px;
+        min-width: 315px;
         margin-top: 119px;
     }
 
@@ -27,7 +28,14 @@
         width: inherit;
     }
 
+    &__image-wrapper {
+        max-width: 500px;
+        min-width: 315px;
+    }
+
     &__image {
+        width: 100%;
+        height: auto;
         // margin-left: 30px;
     }
 }

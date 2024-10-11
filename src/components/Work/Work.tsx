@@ -1,16 +1,16 @@
-import React from "react";
 import styles from './index.module.scss'
 import { Iwork } from "./Work.props";
 
-const Work = ({ id, title, description, imgDesktop, imgMobile, url }: Iwork) => {
+const Work = ({ title, img, url }: Iwork) => {
+
     return (
-        <div className={styles['work']}>
+        <div className={styles['work']} data-aos="flip-up">
             <a className={styles["work__work-title"]} href={url} target="_blank">
                 {title}
             </a>
             {/* <picture> */}
             {/* <source media="(max-width: 900px)" srcSet={imgMobile} /> */}
-            <img className={styles['work__work-image']} src={imgDesktop} />
+            <img className={styles['work__work-image']} src={img} />
             {/* </picture> */}
         </div>
     );

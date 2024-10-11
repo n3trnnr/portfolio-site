@@ -2,8 +2,6 @@ import Work from "../Work/Work";
 import styles from './WorksList.module.scss'
 import { worksList } from "./WorksListData";
 
-
-
 const WorksList = () => {
     return (
         <section id="works" className={styles['works']}>
@@ -15,11 +13,10 @@ const WorksList = () => {
                     {worksList.map((work) => (
                         <Work
                             key={work.id}
-                            id={work.id}
                             title={work.title}
                             description={work.description}
-                            imgDesktop={work.imgDesktop}
-                            imgMobile={work.imgMobile} url={work.url}
+                            img={work.img}
+                            url={work.url}
                         />
                     ))
                     }

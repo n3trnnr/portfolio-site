@@ -5,7 +5,7 @@
     &__inner {
         max-width: 315px;
         max-height: 412px;
-        margin: 90px auto 30px auto;
+        margin: 90px auto 100px;
         padding: 0 30px;
         display: flex;
         flex-direction: column;
@@ -18,10 +18,11 @@
 
     &__title {
         @extend %font-title;
+        margin-bottom: 20px;
     }
 
     &__description {
-        margin-block: 40px;
+        margin-bottom: 20px;
         text-align: center;
         color: var(--color-dark-gray);
     }
@@ -30,7 +31,7 @@
         display: inline-block;
         padding: 0 15px;
         height: 42px;
-        margin-bottom: 60px;
+        margin-bottom: 70px;
         border-radius: var(--radius-md);
         background-color: var(--color-dark-gray);
         color: var(--color-white);
@@ -52,16 +53,13 @@
     }
 
     &__telegram-btn {
-        margin-bottom: 34px;
-
-        &:active {
-            // transform: translateY(2px);
-        }
+        margin-bottom: 20px;
     }
 
     &__logo {
         width: 42px;
-        height: auto;
+        height: 42px;
+        margin-bottom: 20px;
 
         &:hover {
             fill: var(--color-gray);

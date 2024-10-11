@@ -1,6 +1,7 @@
 @use '../../styles/variables';
 
 .work {
+    width: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +17,7 @@
     }
 
     &__work-image {
-        width: 930px;
+        max-width: 100%;
         height: auto;
         border-radius: var(--radius-md);
         box-shadow: var(--shadow);

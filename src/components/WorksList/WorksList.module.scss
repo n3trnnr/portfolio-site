@@ -4,8 +4,9 @@
     background: var(--color-light-gray);
 
     &__works-inner {
+        max-width: 930px;
+        min-width: 315px;
         padding: 0 30px 30px 30px;
-        max-width: 990px;
         margin: 0 auto;
         border-radius: var(--raduis-md);
     }

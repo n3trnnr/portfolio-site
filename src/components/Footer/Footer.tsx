@@ -1,4 +1,3 @@
-import React from "react";
 import styles from './index.module.scss'
 import Logos from "../UI/Losog";
 
@@ -9,12 +8,13 @@ const Footer = () => {
                 <h3 className={styles['footer__title']}>
                     Contact
                 </h3>
-                <p className={styles['footer__description']}>
+
+                <p className={styles['footer__description']} data-aos="fade-down">
                     Want to know more or just chat?<br />
                     You are welcome!
                 </p>
 
-                <button className={styles['footer__mail-btn']}>
+                <button className={styles['footer__mail-btn']} data-aos="fade-down">
                     <a href="mailto:n3trnnr@gmail.com" target="_top">
                         Send message
                     </a>
@@ -25,9 +25,12 @@ const Footer = () => {
                     href="https://t.me/n3trnnr"
                     target="_blank"
                 >
-                    <Logos logoName={'tg'} styleName={styles['footer__logo']} />
+                    <div data-aos="zoom-in" >
+                        <Logos logoName={'tg'} styleName={styles['footer__logo']} />
+                    </div>
                 </a>
-                <span>© Alexey Serdyuk, 2024</span>
+
+                <span data-aos="fade-up">© Alexey Serdyuk, 2024</span>
             </div>
         </footer>
     );
