@@ -6,7 +6,7 @@ import authorMobile from '../../assets/author/author-mobile.png'
 
 const AboutMe = () => {
     return (
-        <section id="me" className={styles.section}>
+        <section id='about' className={styles.section}>
             <div className={styles['section__inner']}>
                 <div className={styles['section__text-content']} data-aos="fade-up">
                     <h1 className={styles['section__headling']}>Alexey Serdyuk <br /> <span>Frontend Developer</span></h1>
@@ -14,7 +14,6 @@ const AboutMe = () => {
                 </div>
                 <picture className={styles['section__image-wrapper']}
                     data-aos="fade-left"
-                    data-aos-duration="500"
                 >
                     {/* <source media="(max-width:768px)" srcSet={authorMobile} /> */}
                     <img className={styles['section__image']} src={author} alt="author" />

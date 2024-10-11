@@ -7,8 +7,8 @@ import 'aos/dist/aos.css';
 
 AOS.init({
   // once: true,
-  // delay: 50,
-  duration: 300
+  // delay: 30,
+  duration: 600
 })
 
 createRoot(document.getElementById('root')!).render(

@@ -7,27 +7,43 @@ const Header = () => {
     const [active, setActive] = useState<boolean>(false)
     const [size, setSize] = useState<number | null>(null)
 
+    const [activeScroll, setActiveScroll] = useState<boolean>(false)
+    const [scroll, setScroll] = useState<number | null>(null)
+
     useEffect(() => {
         const updateSize = () => {
             setSize(window.innerWidth)
         }
         window.addEventListener('resize', updateSize)
 
-        if (size !== null && size >= 1230) {
-            setActive(false)
-        }
+        setActive(false)
     }, [size])
 
+    useEffect(() => {
+        const updateScroll = () => {
+            setScroll(window.scrollY)
+        }
+
+        window.addEventListener('scroll', updateScroll)
+
+        if (scroll !== null && scroll >= 100) {
+            setActiveScroll(true)
+        } else if (scroll !== null && scroll === 0) {
+            setActiveScroll(false)
+        }
+    }, [scroll])
+
+
     return (
-        <header className={styles['header']}>
+        <header className={`${styles['header']} ${activeScroll && styles['header__active']}`}>
             <div className={styles["header__inner"]}>
-                <a href="#!" className={styles["header__logo"]} data-aos="fade-down">
+                <a href="#about" className={styles["header__logo"]} data-aos="fade-down">
                     SRDK
                 </a>
                 <nav className={`${styles["header__menu"]} ${active && styles['header__menu__active']}`}>
                     <ul className={styles["header__menu-list"]}>
                         <li onClick={() => setActive(!active)}>
-                            <a className={styles["header__menu-item"]} href="#me">About Me</a>
+                            <a className={styles["header__menu-item"]} href="#about">About Me</a>
                         </li>
                         <li onClick={() => setActive(!active)}>
                             <a className={styles["header__menu-item"]} href='#works'>Works</a>
