@@ -8,7 +8,7 @@ const WorksList = () => {
             <div className={styles["works__works-inner"]}>
                 <div className={styles['works__works-list']}>
                     <div className={styles['works__works-title']}>
-                        Portfolio
+                        Портфолио
                     </div>
                     {worksList.map((work) => (
                         <Work

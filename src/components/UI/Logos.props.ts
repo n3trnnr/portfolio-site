@@ -1,4 +1,4 @@
-import { svgIcons } from "./Losog";
+import { svgIcons } from "./Logos";
 
 export interface ILogos {
     logoName?: keyof typeof svgIcons,

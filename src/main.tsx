@@ -6,7 +6,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 
 AOS.init({
-  // once: true,
+  once: true,
   // delay: 30,
   duration: 600
 })

@@ -1,12 +1,12 @@
 import styles from './index.module.scss'
-import Logos from "../UI/Losog";
+import Logos from "../UI/Logos";
 
 const Footer = () => {
     return (
         <footer id="contact" className={styles['footer']}>
             <div className={styles['footer__inner']}>
                 <h3 className={styles['footer__title']}>
-                    Contact
+                    Контакты
                 </h3>
 
                 <p className={styles['footer__description']} data-aos="fade-down">

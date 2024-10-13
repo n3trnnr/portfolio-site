@@ -1,23 +1,23 @@
 import styles from './index.module.scss'
-import author from '../../assets/author/author.png'
-import authorMobile from '../../assets/author/author-mobile.png'
-
-//Приветствую! Я фронтенд разработчик и я могу сделать для вас классные программистские штуки, а пока вы думаете можете тут осмотреться.
 
 const AboutMe = () => {
     return (
-        <section id='about' className={styles.section}>
-            <div className={styles['section__inner']}>
-                <div className={styles['section__text-content']} data-aos="fade-up">
-                    <h1 className={styles['section__headling']}>Alexey Serdyuk <br /> <span>Frontend Developer</span></h1>
-                    <p className={styles['section__description']}>Hello! I'm a frontend developer and I can do cool programming stuff for you, and while you're thinking, you can look around here.</p>
-                </div>
-                <picture className={styles['section__image-wrapper']}
-                    data-aos="fade-left"
-                >
-                    {/* <source media="(max-width:768px)" srcSet={authorMobile} /> */}
-                    <img className={styles['section__image']} src={author} alt="author" />
-                </picture>
+        <section id='about' className={styles['resume-section']} data-aos='fade-up'>
+            <div className={styles['resume-section__inner']}>
+                <h3 className={styles['resume-section__title']}>
+                    Обо мне
+                </h3>
+                <p className={styles['resume-section__description']}>
+                    Окончил курс по frontend разработке в IT Nordic School, где работал над приложением для организации мероприятий. Изучал React, Redux, Thunk, TS, ES6+, SASS, CSS, HTML, Webpack, Git и другие технологии.
+                </p>
+                <br />
+                <p className={styles['resume-section__description']}>
+                    Принимал участие в разработке проекта "Гринатом документы" на React, TS, MobX, React Router, Axios, CSS в команде из 10 человек для CaseLab. Занимался версткой, стилизацией компонентов, описанием логики взаимодействия клиент-серверной части и управлением состоянием приложения. Реализовывал навигацию, поиск, фильтрацию данных, а также исправлял баги и проводил рефакторинг кода.
+                </p>
+                <br />
+                <p className={styles['resume-section__description']}>
+                    В настоящее время работаю над разработкой таск-менеджера для управления проектами и задачами, где применяю ранее изученные и новые технологии такие как Vite, Strapi CMS, React Hook Form, Dnd kit. Отвечаю за весь процесс разработки - от дизайна и верстки до настройки серверных контроллеров.
+                </p>
             </div>
         </section>
     );

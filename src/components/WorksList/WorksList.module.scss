@@ -1,7 +1,7 @@
 @use '../../styles/variables';
 
 .works {
-    background: var(--color-light-gray);
+    background: var(--color-white);
 
     &__works-inner {
         max-width: 930px;
@@ -19,7 +19,7 @@
     }
 
     &__works-title {
-        padding: 90px 0 30px;
+        padding: 90px 0 40px;
         @extend %font-title;
     }
 }

@@ -43,13 +43,16 @@ const Header = () => {
                 <nav className={`${styles["header__menu"]} ${active && styles['header__menu__active']}`}>
                     <ul className={styles["header__menu-list"]}>
                         <li onClick={() => setActive(!active)}>
-                            <a className={styles["header__menu-item"]} href="#about">About Me</a>
+                            <a className={styles["header__menu-item"]} href="#home">Главная</a>
                         </li>
                         <li onClick={() => setActive(!active)}>
-                            <a className={styles["header__menu-item"]} href='#works'>Works</a>
+                            <a className={styles["header__menu-item"]} href="#about">Обо мне</a>
                         </li>
                         <li onClick={() => setActive(!active)}>
-                            <a className={styles["header__menu-item"]} href='#contact'>Contact</a>
+                            <a className={styles["header__menu-item"]} href='#works'>Портфолио</a>
+                        </li>
+                        <li onClick={() => setActive(!active)}>
+                            <a className={styles["header__menu-item"]} href='#contact'>Контакты</a>
                         </li>
                     </ul>
                 </nav>
