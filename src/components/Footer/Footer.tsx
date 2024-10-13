@@ -10,13 +10,13 @@ const Footer = () => {
                 </h3>
 
                 <p className={styles['footer__description']} data-aos="fade-down">
-                    Want to know more or just chat?<br />
-                    You are welcome!
+                    Хотите узнать больше или просто пообщаться?<br />
+                    Добро пожаловать!
                 </p>
 
                 <button className={styles['footer__mail-btn']} data-aos="fade-down">
                     <a href="mailto:n3trnnr@gmail.com" target="_top">
-                        Send message
+                        Отправить сообщение
                     </a>
                 </button>
 
@@ -25,12 +25,12 @@ const Footer = () => {
                     href="https://t.me/n3trnnr"
                     target="_blank"
                 >
-                    <div data-aos="zoom-in" >
+                    <div data-aos="fade-up">
                         <Logos logoName={'tg'} styleName={styles['footer__logo']} />
                     </div>
                 </a>
 
-                <span data-aos="fade-up">© Alexey Serdyuk, 2024</span>
+                <span >© Alexey Serdyuk, 2024</span>
             </div>
         </footer>
     );

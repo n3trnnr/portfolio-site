@@ -3,7 +3,7 @@ import Logos from "../UI/Logos";
 
 const Skills = () => {
     return (
-        <section className={styles['section']}>
+        <section id='skills' className={styles['section']}>
             <div className={styles['section__inner']}>
                 <h3 className={styles['section__title']}>
                     Навыки

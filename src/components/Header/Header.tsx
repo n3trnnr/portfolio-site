@@ -37,7 +37,7 @@ const Header = () => {
     return (
         <header className={`${styles['header']} ${activeScroll && styles['header__active']}`}>
             <div className={styles["header__inner"]}>
-                <a href="#about" className={styles["header__logo"]} data-aos="fade-down">
+                <a href="#home" className={styles["header__logo"]} data-aos="fade-down">
                     SRDK
                 </a>
                 <nav className={`${styles["header__menu"]} ${active && styles['header__menu__active']}`}>
@@ -47,6 +47,9 @@ const Header = () => {
                         </li>
                         <li onClick={() => setActive(!active)}>
                             <a className={styles["header__menu-item"]} href="#about">Обо мне</a>
+                        </li>
+                        <li onClick={() => setActive(!active)}>
+                            <a className={styles["header__menu-item"]} href="#skills">Навыки</a>
                         </li>
                         <li onClick={() => setActive(!active)}>
                             <a className={styles["header__menu-item"]} href='#works'>Портфолио</a>

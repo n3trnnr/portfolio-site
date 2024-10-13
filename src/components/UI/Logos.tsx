@@ -22,22 +22,22 @@ import Telegram from '../../assets/icons/telegram.svg?react'
 import { ILogos } from "./Logos.props";
 
 const svgSkills = [
-    { ReactLogo, title: 'React', id: 1 },
-    { Redux, title: 'Redux', id: 2 },
-    { TypeScript, title: 'TypeScript', id: 3 },
-    { JavaScript, title: 'JavaScript', id: 4 },
-    { ReactRouter, title: 'React Router', id: 5 },
-    { ReactHookForm, title: 'React Hook Form', id: 6 },
-    { Html, title: 'HTML5', id: 7 },
-    { Css, title: 'CSS3', id: 8 },
-    { Sass, title: 'Sass', id: 9 },
-    { Webpack, title: 'Webpack', id: 10 },
-    { Vite, title: 'Vite', id: 11 },
-    { Dndkit, title: 'Dnd Kit', id: 12 },
-    { Strapi, title: 'Strapi', id: 13 },
-    { Axios, title: 'Axios', id: 14 },
-    { Git, title: 'Git', id: 15 },
-    { Figma, title: 'Figma', id: 16 }
+    ReactLogo,
+    Redux,
+    TypeScript,
+    JavaScript,
+    ReactRouter,
+    ReactHookForm,
+    Html,
+    Css,
+    Sass,
+    Webpack,
+    Vite,
+    Dndkit,
+    Strapi,
+    Axios,
+    Git,
+    Figma
 ]
 
 export const svgIcons = {
@@ -53,14 +53,16 @@ const Logos = ({ logoName, styleName }: ILogos) => {
             {logoName ? <Logo className={styleName} /> :
                 <>
                     {svgSkills.map((i, index) => {
-                        const title = Object.keys(i)[0] as keyof typeof svgSkills[index]
-                        const Logo = i[title] as React.FunctionComponent<React.SVGProps<SVGSVGElement>>
+
+                        const title = i.name.split('Svg')[1]
+
+                        const Logo = i as React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
 
                         return (
-                            <div key={i.id} className={styles['card']}>
+                            <div key={title} className={styles['card']}>
                                 <div className={styles['card__inner']}>
                                     <Logo key={index} className={styles['card__logo']} />
-                                    <div>{i.title}</div>
+                                    <div>{title}</div>
                                 </div>
                             </div>
                         )

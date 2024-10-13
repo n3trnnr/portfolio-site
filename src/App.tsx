@@ -5,7 +5,7 @@ function App() {
 
 
   return (
-    <main className={styles.main}>
+    <main className={styles.main} id='home'>
       <Layout />
     </main>
   )

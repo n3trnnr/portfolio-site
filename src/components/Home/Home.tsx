@@ -2,15 +2,13 @@ import styles from './index.module.scss'
 import author from '../../assets/author/author.png'
 // import authorMobile from '../../assets/author/author-mobile.png'
 
-//Приветствую! Я фронтенд разработчик и я могу сделать для вас классные программистские штуки, а пока вы думаете можете тут осмотреться.
-
 const Home = () => {
     return (
-        <section id='home' className={styles.section}>
+        <section className={styles.section}>
             <div className={styles['section__inner']}>
                 <div className={styles['section__text-content']} data-aos="fade-up">
-                    <h1 className={styles['section__headling']}>Alexey Serdyuk <br /> <span>Frontend Developer</span></h1>
-                    <p className={styles['section__description']}>Hello! I'm a frontend developer and I can do cool programming stuff for you, and while you're thinking, you can look around here.</p>
+                    <h1 className={styles['section__headling']}>Алексей Сердюк <br /> <span>Frontend Developer</span></h1>
+                    <p className={styles['section__description']}>Приветствую! Я фронтенд разработчик и могу сделать для вас классные программистские штуки, а пока вы думаете можете тут осмотреться.</p>
                 </div>
                 <picture className={styles['section__image-wrapper']}
                     data-aos="fade-left"

@@ -1,12 +1,12 @@
 @use '../../styles/variables';
 
-.resume-section {
+.section {
     background: var(--color-white);
 
     &__inner {
         max-width: 930px;
         padding: 0 30px;
-        margin: 0 auto 30px;
+        margin: 0 auto 70px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -20,5 +20,30 @@
 
     &__description {
         line-height: 25px;
+        margin-bottom: 40px;
+        color: var(--color-gray);
+
+        & u,
+        b {
+            color: black;
+        }
+    }
+
+    &__resume-wrapper {
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__resume-pointer {
+        margin-bottom: 15px;
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid rgb(255, 0, 0);
+
     }
 }

@@ -10,7 +10,9 @@ const Work = ({ title, img, url }: Iwork) => {
             </a>
             {/* <picture> */}
             {/* <source media="(max-width: 900px)" srcSet={imgMobile} /> */}
-            <img className={styles['work__work-image']} src={img} />
+            <a href={url} target='_blank'>
+                <img className={styles['work__work-image']} src={img} />
+            </a>
             {/* </picture> */}
         </div>
     );
