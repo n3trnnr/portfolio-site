@@ -21,16 +21,14 @@
     &__description {
         line-height: 25px;
         margin-bottom: 40px;
-        // color: var(--color-gray);
+        color: var(--color-black);
 
-        & u,
-        b {
-            color: black;
+        & span {
+            font-weight: 600;
         }
     }
 
     &__resume-wrapper {
-        // font-weight: bold;
         display: flex;
         flex-direction: column;
         justify-content: center;

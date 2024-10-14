@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './Logos.module.scss'
+import styles from './index.module.scss'
 
 import ReactLogo from '../../assets/logos/react.svg?react'
 import Redux from '../../assets/logos/redux.svg?react'

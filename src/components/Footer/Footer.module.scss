@@ -51,16 +51,12 @@
     &__contacts-list {
         display: flex;
         gap: 20px;
-    }
-
-    &__contact-btn {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     &__logo {
         width: 42px;
         height: 42px;
-        margin-bottom: 20px;
 
         &:hover {
             fill: var(--color-gray);

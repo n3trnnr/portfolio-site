@@ -1,0 +1,20 @@
+@import '../../styles/mixins';
+
+@include mobile-small() {
+    .card {
+        &__inner {
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+
+            & div {
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+
+        &__logo {
+            margin-bottom: 5px;
+        }
+    }
+}
