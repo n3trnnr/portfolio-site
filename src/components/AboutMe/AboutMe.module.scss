@@ -1,11 +1,11 @@
 @use '../../styles/variables';
 
 .section {
-    background: var(--color-white);
+    background: var(--color-yellow);
 
     &__inner {
         max-width: 930px;
-        padding: 0 30px;
+        padding: 0 30px 70px;
         margin: 0 auto 70px;
         display: flex;
         flex-direction: column;
@@ -21,7 +21,7 @@
     &__description {
         line-height: 25px;
         margin-bottom: 40px;
-        color: var(--color-gray);
+        // color: var(--color-gray);
 
         & u,
         b {
@@ -30,7 +30,7 @@
     }
 
     &__resume-wrapper {
-        font-weight: bold;
+        // font-weight: bold;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -38,12 +38,26 @@
     }
 
     &__resume-pointer {
-        margin-bottom: 15px;
-        width: 0;
-        height: 0;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-        border-top: 15px solid rgb(255, 0, 0);
+        width: 42px;
+        height: 42px;
+    }
 
+    &__resume-link {
+        display: block;
+        padding: 0 15px;
+        height: 42px;
+        border-radius: var(--radius-md);
+        background-color: var(--color-black);
+        color: var(--color-white);
+        font-size: var(--font-md);
+
+        &>a {
+            color: white;
+        }
+
+        &:hover {
+            background: var(--color-dark-gray);
+            transition: var(--transition-bg);
+        }
     }
 }

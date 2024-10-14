@@ -1,8 +1,9 @@
+import Logos from '../UI/Logos';
 import styles from './index.module.scss'
 
 const AboutMe = () => {
     return (
-        <section id='about' className={styles['resume-section']} >
+        <section id='about' className={styles['section']} >
             <div className={styles['section__inner']}>
                 <h3 className={styles['section__title']}>
                     Обо мне
@@ -19,11 +20,19 @@ const AboutMe = () => {
                     В настоящее время работаю над разработкой <u>таск-менеджера</u> для управления проектами и задачами, где применяю ранее изученные и новые технологии такие как <b>Vite, Strapi CMS, React Hook Form, Dnd kit</b>. Отвечаю за весь процесс разработки - от дизайна и верстки до настройки серверных контроллеров.
                 </p>
                 <div className={styles['section__resume-wrapper']}>
-                    <div data-aos='fade-up' className={styles['section__resume-pointer']} />
+
+                    <div data-aos='fade-down' >
+                        <Logos logoName={'download'} styleName={styles['section__resume-pointer']} />
+                    </div>
+
                     <a
-                        data-aos='fade-up'
-                        className={styles['section__resume-link']}
-                        href="https://drive.google.com/file/d/16vLtSy0Bt43-_NLHpB_HLf1Zx5Ms1MwX/view?usp=drive_link" target='_blank'><u>Скачать Резюме</u></a>
+                        href="https://drive.google.com/file/d/16vLtSy0Bt43-_NLHpB_HLf1Zx5Ms1MwX/view?usp=drive_link"
+                        target='_blank'>
+                        <button className={styles['section__resume-link']} data-aos='fade-up'>
+                            Скачать Резюме
+                        </button>
+                    </a>
+
                 </div>
             </div>
         </section >

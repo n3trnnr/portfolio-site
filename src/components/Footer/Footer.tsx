@@ -14,23 +14,34 @@ const Footer = () => {
                     Добро пожаловать!
                 </p>
 
-                <button className={styles['footer__mail-btn']} data-aos="fade-down">
-                    <a href="mailto:n3trnnr@gmail.com" target="_top">
+                <a href="mailto:n3trnnr@gmail.com" target="_top">
+                    <button className={styles['footer__mail-btn']} data-aos="fade-down">
                         Отправить сообщение
-                    </a>
-                </button>
-
-                <a
-                    className={styles['footer__telegram-btn']}
-                    href="https://t.me/n3trnnr"
-                    target="_blank"
-                >
-                    <div data-aos="fade-up">
-                        <Logos logoName={'tg'} styleName={styles['footer__logo']} />
-                    </div>
+                    </button>
                 </a>
 
-                <span >© Alexey Serdyuk, 2024</span>
+                <div className={styles['footer__contacts-list']}>
+                    <a
+                        className={styles['footer__contact-btn']}
+                        href="https://t.me/n3trnnr"
+                        target="_blank"
+                    >
+                        <div data-aos="fade-up">
+                            <Logos logoName={'tg'} styleName={styles['footer__logo']} />
+                        </div>
+                    </a>
+                    <a
+                        className={styles['footer__contact-btn']}
+                        href="https://github.com/n3trnnr"
+                        target="_blank"
+                    >
+                        <div data-aos="fade-up">
+                            <Logos logoName={'gitHub'} styleName={styles['footer__logo']} />
+                        </div>
+                    </a>
+                </div>
+
+                <span >© 2024 Алексей Сердюк</span>
             </div>
         </footer>
     );

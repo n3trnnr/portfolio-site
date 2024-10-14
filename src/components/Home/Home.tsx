@@ -1,5 +1,5 @@
 import styles from './index.module.scss'
-import author from '../../assets/author/author.png'
+import author from '../../assets/author/author.webp'
 // import authorMobile from '../../assets/author/author-mobile.png'
 
 const Home = () => {

@@ -1,17 +1,13 @@
 @use '../../styles/variables';
 @import '../../styles/mixins';
 
-@include laptop() {
-    .header {
-
-        &__menu {
-            // width: 310px;
-        }
-    }
-}
-
 @include mobile-big {
     .header {
+
+        &__inner {
+            padding: 15px 30px;
+        }
+
         &__menu {
             width: 100%;
             height: 100%;
@@ -46,9 +42,8 @@
 
     .burger-menu {
         position: fixed;
-        right: 0;
-        top: 0;
-        padding: 30px 30px 0 0;
+        right: 30px;
+        top: 15px;
         display: flex;
         z-index: 1;
     }

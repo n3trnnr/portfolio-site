@@ -6,8 +6,8 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 
 AOS.init({
-  // once: true,
-  // delay: 30,
+  once: true,
+  delay: 100,
   duration: 600
 })
 

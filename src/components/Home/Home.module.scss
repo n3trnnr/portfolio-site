@@ -1,10 +1,11 @@
 .section {
-    background: var(--color-light-gray);
+    // background: var(--color-white);
+    background: var(--color-white);
 
     &__inner {
         max-width: 1230px;
         margin: 0 auto;
-        padding: 80px 30px 0;
+        padding: 40px 30px 0;
         min-height: 500px;
         display: flex;
         justify-content: space-between;

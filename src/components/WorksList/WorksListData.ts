@@ -1,5 +1,5 @@
-import yotabo from '../../assets/portfolio/yotabo.png'
-import green from '../../assets/portfolio/greenatom.png'
+import yotabo from '../../assets/portfolio/yotabo.webp'
+import green from '../../assets/portfolio/greenatom.webp'
 
 export const worksList = [
     {

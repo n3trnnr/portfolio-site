@@ -6,13 +6,13 @@
     right: 0;
     left: 0;
     z-index: 3;
-    background: var(--color-light-gray);
+    background: var(--color-white);
 
     &__inner {
         max-width: 1230px;
         min-width: 315px;
         margin: 0 auto;
-        padding: 30px 30px 0;
+        padding: 20px 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -33,6 +33,11 @@
         justify-content: space-between;
         font-size: var(--font-md);
         font-weight: var(--font-medium);
+
+        & li:active {
+            transform: translateY(2px);
+            transition: transform 0.1s ease-in;
+        }
     }
 
     &__menu-item {
@@ -44,7 +49,6 @@
         }
     }
 }
-
 
 .burger-menu {
     display: none;
@@ -82,5 +86,6 @@
 }
 
 .header__active {
-    background-color: rgba(#F1F1F1, 0.9);
+    background-color: rgba(#ffffff, 1);
+    filter: drop-shadow(var(--shadow));
 }

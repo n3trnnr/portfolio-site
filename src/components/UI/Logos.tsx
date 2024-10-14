@@ -19,6 +19,8 @@ import Webpack from '../../assets/logos/webpack.svg?react'
 import Axios from '../../assets/logos/axios.svg?react'
 
 import Telegram from '../../assets/icons/telegram.svg?react'
+import GitHub from '../../assets/icons/github.svg?react'
+import Download from '../../assets/icons/download.svg?react'
 import { ILogos } from "./Logos.props";
 
 const svgSkills = [
@@ -37,25 +39,42 @@ const svgSkills = [
     Strapi,
     Axios,
     Git,
-    Figma
+    Figma,
+]
+
+const svgNames = [
+    'React',
+    'Redux',
+    'TypeScript',
+    'JavaScript',
+    'React Router',
+    'React Hook Form',
+    'HTML5',
+    'CSS3',
+    'Sass',
+    'Webpack',
+    'Vite',
+    'Dnd Kit',
+    'Strapi',
+    'Axios',
+    'Git',
+    'Figma',
 ]
 
 export const svgIcons = {
-    tg: Telegram
+    tg: Telegram,
+    download: Download,
+    gitHub: GitHub
 }
 
 const Logos = ({ logoName, styleName }: ILogos) => {
-
     const Logo: React.FunctionComponent<React.SVGProps<SVGSVGElement>> = svgIcons[logoName!];
-
     return (
         <>
             {logoName ? <Logo className={styleName} /> :
                 <>
                     {svgSkills.map((i, index) => {
-
-                        const title = i.name.split('Svg')[1]
-
+                        const title = svgNames[index]
                         const Logo = i as React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
 
                         return (

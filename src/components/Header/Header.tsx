@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from './index.module.scss'
+import logo from '../../assets/logo.svg'
 
 
 const Header = () => {
@@ -33,12 +34,11 @@ const Header = () => {
         }
     }, [scroll])
 
-
     return (
-        <header className={`${styles['header']} ${activeScroll && styles['header__active']}`}>
+        <header className={`${styles['header']} ${activeScroll && !active && styles['header__active']}`}>
             <div className={styles["header__inner"]}>
                 <a href="#home" className={styles["header__logo"]} data-aos="fade-down">
-                    SRDK
+                    <img src={logo} alt="logo" />
                 </a>
                 <nav className={`${styles["header__menu"]} ${active && styles['header__menu__active']}`}>
                     <ul className={styles["header__menu-list"]}>

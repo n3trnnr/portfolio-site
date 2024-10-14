@@ -1,11 +1,11 @@
 @use '../../styles/variables';
 
 .footer {
-    background: var(--color-light-gray);
+    background: var(--color-white);
 
     &__inner {
         max-width: 500px;
-        margin: 0 auto; //Подумать над отступом снизу и решить проблему с анимацией
+        margin: 0 auto;
         padding: 90px 30px 0;
         display: flex;
         flex-direction: column;
@@ -29,12 +29,12 @@
     }
 
     &__mail-btn {
-        display: inline-block;
+        display: block;
         padding: 0 15px;
         height: 42px;
         margin-bottom: 80px;
         border-radius: var(--radius-md);
-        background-color: var(--color-dark-gray);
+        background: var(--color-black);
         color: var(--color-white);
         font-size: var(--font-md);
 
@@ -43,17 +43,17 @@
         }
 
         &:hover {
-            background: var(--color-gray);
+            background: var(--color-dark-gray);
             transition: var(--transition-bg);
-        }
-
-        &:active {
-            transform: translateY(2px);
-            transition: transform 0.1s ease-in;
         }
     }
 
-    &__telegram-btn {
+    &__contacts-list {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__contact-btn {
         margin-bottom: 20px;
     }
 
