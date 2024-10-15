@@ -4,18 +4,15 @@ import author from '../../assets/author/author.webp'
 
 const Home = () => {
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id='home'>
             <div className={styles['section__inner']}>
                 <div className={styles['section__text-content']} data-aos="fade-up">
                     <h1 className={styles['section__headling']}>Алексей Сердюк <br /> <span>Frontend Developer</span></h1>
                     <p className={styles['section__description']}>Приветствую! Я фронтенд разработчик и могу сделать для вас классные программистские штуки, а пока вы думаете можете тут осмотреться.</p>
                 </div>
-                <picture className={styles['section__image-wrapper']}
-                    data-aos="fade-left"
-                >
-                    {/* <source media="(max-width:768px)" srcSet={authorMobile} /> */}
+                <div className={styles['section__image-wrapper']} data-aos='fade-left' data-aos-anchor='#home'>
                     <img className={styles['section__image']} src={author} alt="author" />
-                </picture>
+                </div>
             </div>
         </section>
     );

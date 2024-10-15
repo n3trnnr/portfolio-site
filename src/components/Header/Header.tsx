@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './index.module.scss'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo/logo.svg'
+import logoMobile from '../../assets/logo/logo-mobile.svg'
 
 
 const Header = () => {
@@ -37,9 +38,14 @@ const Header = () => {
     return (
         <header className={`${styles['header']} ${activeScroll && !active && styles['header__active']}`}>
             <div className={styles["header__inner"]}>
+
                 <a href="#home" className={styles["header__logo"]} data-aos="fade-down">
-                    <img src={logo} alt="logo" />
+                    <picture>
+                        <source media="(max-width:799px)" srcSet={logoMobile} />
+                        <img src={logo} alt="logo" />
+                    </picture>
                 </a>
+
                 <nav className={`${styles["header__menu"]} ${active && styles['header__menu__active']}`}>
                     <ul className={styles["header__menu-list"]}>
                         <li onClick={() => setActive(!active)}>

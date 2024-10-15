@@ -1,12 +1,12 @@
 @use '../../styles/variables';
 
 .section {
-    background: var(--color-yellow);
+    background: var(--color-light-gray);
 
     &__inner {
         max-width: 930px;
         padding: 0 30px 70px;
-        margin: 0 auto 70px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
