@@ -1,11 +1,13 @@
 @use '../../styles/variables';
 
 .work {
-    width: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    &__inner {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     &__work-title {
         margin-top: 30px;
