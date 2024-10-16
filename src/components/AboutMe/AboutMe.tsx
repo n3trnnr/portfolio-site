@@ -29,7 +29,7 @@ const AboutMe = () => {
                         href="https://drive.google.com/file/d/16vLtSy0Bt43-_NLHpB_HLf1Zx5Ms1MwX/view?usp=drive_link"
                         target='_blank'>
                         <button className={styles['section__resume-link']} data-aos='fade-up'>
-                            Скачать Резюме
+                            Посмотреть Резюме
                         </button>
                     </a>
 

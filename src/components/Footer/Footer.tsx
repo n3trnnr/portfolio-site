@@ -1,9 +1,13 @@
 import styles from './index.module.scss'
 import Logos from "../UI/Logos";
 
-const Footer = () => {
+interface IFooter {
+    myRef: React.RefObject<HTMLElement>
+}
+
+const Footer = ({ myRef }: IFooter) => {
     return (
-        <footer id="contact" className={styles['footer']}>
+        <footer ref={myRef} id="contact" className={styles['footer']} >
             <div className={styles['footer__inner']}>
                 <h3 className={styles['footer__title']}>
                     Контакты

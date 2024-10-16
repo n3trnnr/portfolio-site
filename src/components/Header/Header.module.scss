@@ -6,7 +6,7 @@
     right: 0;
     left: 0;
     z-index: 3;
-    background: var(--color-white);
+    background: var(--color-light-gray);
     transition: all 0.1s ease;
 
     &__inner {
@@ -53,8 +53,8 @@
 
 .burger-menu {
     display: none;
-    width: 42px;
-    height: 42px;
+    width: 48px;
+    height: 48px;
     border-radius: var(--radius-sm);
     flex-direction: column;
     justify-content: center;
@@ -89,5 +89,5 @@
 .header__active {
     background-color: rgba(#ffffff, 1);
     filter: drop-shadow(var(--shadow));
-    transition: all 0.1s ease;
+    transition: all 0.5s ease;
 }

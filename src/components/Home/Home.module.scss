@@ -1,6 +1,7 @@
+@use '../../styles/variables';
+
 .section {
-    // background: var(--color-white);
-    background: var(--color-white);
+    background: var(--color-light-gray);
 
     &__inner {
         max-width: 1230px;
@@ -27,7 +28,7 @@
 
     &__description {
         width: inherit;
-        color: var(--color-gray);
+        color: var(--color-dark-gray);
     }
 
     &__image-wrapper {

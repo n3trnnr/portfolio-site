@@ -8,12 +8,17 @@
     align-items: center;
 
     &__work-title {
-        margin-bottom: 30px;
+        margin-top: 30px;
         text-decoration: underline;
 
         &:hover {
             color: var(--color-gray);
         }
+    }
+
+    &__description {
+        margin-bottom: 30px;
+        text-align: center;
     }
 
     &__work-image {

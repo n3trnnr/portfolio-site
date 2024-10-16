@@ -3,72 +3,72 @@ import styles from './index.module.scss'
 import logo from '../../assets/logo/logo.svg'
 import logoMobile from '../../assets/logo/logo-mobile.svg'
 
-
 const Header = () => {
 
-    const [active, setActive] = useState<boolean>(false)
-    const [size, setSize] = useState<number | null>(null)
+    const [showBurgerMenu, setShowBurgerMenu] = useState<boolean>(false)
+    const [width, setWidth] = useState<number | null>(null)
 
     const [activeScroll, setActiveScroll] = useState<boolean>(false)
-    const [scroll, setScroll] = useState<number | null>(null)
+    const [scroll, setScroll] = useState<number>(0)
 
     useEffect(() => {
-        const updateSize = () => {
-            setSize(window.innerWidth)
+        const updateWidth = () => {
+            setWidth(window.innerWidth)
         }
-        window.addEventListener('resize', updateSize)
+        window.addEventListener('resize', updateWidth)
 
-        setActive(false)
-    }, [size])
+        setShowBurgerMenu(false)
+    }, [width])
 
     useEffect(() => {
         const updateScroll = () => {
-            setScroll(window.scrollY)
+            setScroll(Math.round(window.scrollY))
         }
 
         window.addEventListener('scroll', updateScroll)
 
-        if (scroll !== null && scroll >= 100) {
+        if (scroll > 0) {
             setActiveScroll(true)
-        } else if (scroll !== null && scroll === 0) {
+        } else {
             setActiveScroll(false)
         }
     }, [scroll])
 
     return (
-        <header className={`${styles['header']} ${activeScroll && !active && styles['header__active']}`}>
+        <header className={`${styles['header']} ${activeScroll && !showBurgerMenu && styles['header__active']}`}>
             <div className={styles["header__inner"]}>
 
-                <a href="#home" className={styles["header__logo"]} data-aos="fade-down">
+                <a href="#home" className={styles["header__logo"]} data-aos="fade-down" data-aos-once='true'>
                     <picture>
                         <source media="(max-width:799px)" srcSet={logoMobile} />
                         <img src={logo} alt="logo" />
                     </picture>
                 </a>
 
-                <nav className={`${styles["header__menu"]} ${active && styles['header__menu__active']}`}>
+                <nav className={`${styles["header__menu"]} ${showBurgerMenu && styles['header__menu__active']}`}>
                     <ul className={styles["header__menu-list"]}>
-                        <li onClick={() => setActive(!active)}>
+                        <li onClick={() => setShowBurgerMenu(false)}>
                             <a className={styles["header__menu-item"]} href="#home">Главная</a>
                         </li>
-                        <li onClick={() => setActive(!active)}>
+                        <li onClick={() => setShowBurgerMenu(false)}>
                             <a className={styles["header__menu-item"]} href="#about">Обо мне</a>
                         </li>
-                        <li onClick={() => setActive(!active)}>
+                        <li onClick={() => setShowBurgerMenu(false)}>
                             <a className={styles["header__menu-item"]} href="#skills">Навыки</a>
                         </li>
-                        <li onClick={() => setActive(!active)}>
+                        <li onClick={() => setShowBurgerMenu(false)}>
                             <a className={styles["header__menu-item"]} href='#works'>Портфолио</a>
                         </li>
-                        <li onClick={() => setActive(!active)}>
-                            <a className={styles["header__menu-item"]} href='#contact'>Контакты</a>
+                        <li onClick={() => setShowBurgerMenu(false)}>
+                            <a className={styles["header__menu-item"]}
+                                href='#contact'>Контакты</a>
                         </li>
                     </ul>
                 </nav>
-                <div onClick={() => setActive(!active)} className={styles['burger-menu']}>
-                    <div className={`${styles['burger-menu__item']} ${active && styles['burger-menu__item__active']}`}></div>
-                    <div className={`${styles['burger-menu__item']} ${active && styles['burger-menu__item__active']}`}></div>
-                    <div className={`${styles['burger-menu__item']} ${active && styles['burger-menu__item__active']}`}></div>
+                <div onClick={() => setShowBurgerMenu(!showBurgerMenu)} className={styles['burger-menu']}>
+                    <div className={`${styles['burger-menu__item']} ${showBurgerMenu && styles['burger-menu__item__active']}`}></div>
+                    <div className={`${styles['burger-menu__item']} ${showBurgerMenu && styles['burger-menu__item__active']}`}></div>
+                    <div className={`${styles['burger-menu__item']} ${showBurgerMenu && styles['burger-menu__item__active']}`}></div>
                 </div>
             </div>
         </header>
