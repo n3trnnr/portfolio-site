@@ -24,14 +24,23 @@ const Footer = ({ myRef }: IFooter) => {
                     </button>
                 </a>
 
-                <div className={styles['footer__contacts-list']}>
+                <div className={styles['footer__contacts-list']} data-aos="fade-up">
                     <a
                         className={styles['footer__contact-btn']}
                         href="https://t.me/n3trnnr"
                         target="_blank"
                     >
-                        <div data-aos="fade-up">
+                        <div>
                             <Logos logoName={'tg'} styleName={styles['footer__logo']} />
+                        </div>
+                    </a>
+                    <a
+                        className={styles['footer__contact-btn']}
+                        href="https://api.whatsapp.com/send?phone=79019029013"
+                        target="_blank"
+                    >
+                        <div>
+                            <Logos logoName={'whatsApp'} styleName={styles['footer__logo']} />
                         </div>
                     </a>
                     <a
@@ -39,7 +48,7 @@ const Footer = ({ myRef }: IFooter) => {
                         href="https://github.com/n3trnnr"
                         target="_blank"
                     >
-                        <div data-aos="fade-up">
+                        <div>
                             <Logos logoName={'gitHub'} styleName={styles['footer__logo']} />
                         </div>
                     </a>

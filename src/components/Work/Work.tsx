@@ -10,7 +10,7 @@ const Work = ({ title, description, img, url }: Iwork) => {
                 <a data-aos='flip-up' href={url} target='_blank'>
                     <img className={styles['work__work-image']} src={img} />
                 </a>
-                <a className={styles["work__work-title"]} href={url} target="_blank">
+                <a data-aos='fade-up' className={styles["work__work-title"]} href={url} target="_blank">
                     {title}
                 </a>
             </div>

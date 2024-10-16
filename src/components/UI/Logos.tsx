@@ -21,6 +21,7 @@ import Axios from '../../assets/logos/axios.svg?react'
 import Telegram from '../../assets/icons/telegram.svg?react'
 import GitHub from '../../assets/icons/github.svg?react'
 import Download from '../../assets/icons/download.svg?react'
+import WhatsApp from '../../assets/icons/whatsapp.svg?react'
 import { ILogos } from "./Logos.props";
 
 const svgSkills = [
@@ -64,7 +65,8 @@ const svgNames = [
 export const svgIcons = {
     tg: Telegram,
     download: Download,
-    gitHub: GitHub
+    gitHub: GitHub,
+    whatsApp: WhatsApp
 }
 
 const Logos = ({ logoName, styleName }: ILogos) => {
