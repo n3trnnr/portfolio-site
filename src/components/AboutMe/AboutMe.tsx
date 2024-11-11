@@ -13,7 +13,7 @@ const AboutMe = () => {
                 </p>
 
                 <p data-aos='fade-down' className={styles['section__description']}>
-                    Принимал участие в разработке проекта <span>Гринатом документы</span> на <b>React, TypeScript, MobX, React Router, Axios, CSS</b> в команде из 10 человек для CaseLab. Занимался версткой, стилизацией компонентов, описанием логики взаимодействия клиент-серверной части и управлением состоянием приложения. Реализовывал навигацию, поиск, фильтрацию данных, а также исправлял баги и проводил рефакторинг кода.
+                    Принимал участие в разработке проекта <span>Гринатом документы</span> на <b>React, TypeScript, MobX, React Router, Axios, CSS</b> в команде из 20 человек для CaseLab. Занимался версткой, стилизацией компонентов, описанием логики взаимодействия клиент-серверной части и управлением состоянием приложения. Реализовывал навигацию, поиск, фильтрацию данных, а также исправлял баги и проводил рефакторинг кода.
                 </p>
 
                 <p data-aos='fade-down' className={styles['section__description']}>
@@ -26,7 +26,7 @@ const AboutMe = () => {
                     </div>
 
                     <a
-                        href="https://drive.google.com/file/d/16vLtSy0Bt43-_NLHpB_HLf1Zx5Ms1MwX/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/13tSqf5efmV8D9aX0vWMtBis5cqAtXyFV/view?usp=sharing"
                         target='_blank'>
                         <button className={styles['section__resume-link']} data-aos='fade-up'>
                             Посмотреть Резюме
