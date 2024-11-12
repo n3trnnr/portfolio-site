@@ -17,6 +17,7 @@ import Strapi from '../../assets/logos/strapi.svg?react'
 import Vite from '../../assets/logos/vite.svg?react'
 import Webpack from '../../assets/logos/webpack.svg?react'
 import Axios from '../../assets/logos/axios.svg?react'
+import Tilewind from '../../assets/logos/tailwindcss.svg?react'
 
 import Telegram from '../../assets/icons/telegram.svg?react'
 import GitHub from '../../assets/icons/github.svg?react'
@@ -41,6 +42,7 @@ const svgSkills = [
     Axios,
     Git,
     Figma,
+    Tilewind
 ]
 
 const svgNames = [
@@ -60,6 +62,7 @@ const svgNames = [
     'Axios',
     'Git',
     'Figma',
+    'Tailwind'
 ]
 
 export const svgIcons = {
